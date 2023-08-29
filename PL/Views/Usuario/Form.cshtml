@@ -1,0 +1,62 @@
+﻿@model ML.Usuario
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="container" style="text-align:center;">
+    
+    <div class="col-md-12">
+
+        <div class="row">
+
+            <div class="input-group">
+                @Html.LabelFor(model => model.IdUsuario, new { @class = "control-label col-md-2 hidden" })
+                <div class="col-md-3">
+                    @Html.TextBoxFor(model => model.IdUsuario, new { @class = "form-control hidden", @readonly = true })
+                    @Html.ValidationMessageFor(model => model.IdUsuario)
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="input-group">
+                @Html.LabelFor(model => model.Nombre, new { @class = "control-label col-md-2 hidden" })
+                <div class="col-md-3">
+                    @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Nombre)
+                </div>
+            </div>
+
+            <div class="input-group">
+                @Html.LabelFor(model => model.ApellidoPaterno, new { @class = "control-label col-md-2 hidden" })
+                <div class="col-md-3">
+                    @Html.TextBoxFor(model => model.ApellidoPaterno, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ApellidoPaterno)
+                </div>
+            </div>
+
+            <div class="input-group">
+                @Html.LabelFor(model => model.ApellidoMaterno, new { @class = "control-label col-md-2 hidden" })
+                <div class="col-md-3">
+                    @Html.TextBoxFor(model => model.ApellidoMaterno, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ApellidoMaterno)
+                </div>
+            </div>
+
+            <div class="input-group">
+                @Html.LabelFor(model => model.Edad, new { @class = "control-label col-md-2 hidden" })
+                <div class="col-md-3">
+                    @Html.TextBoxFor(model => model.Edad, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Edad)
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    
+    
+</div>
